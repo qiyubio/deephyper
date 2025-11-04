@@ -229,8 +229,7 @@ print(f"\nRandom Search completed! Total evaluations: {len(results_random)}")
 #
 # Let's examine the best configuration found by CBO:
 
-i_max, best_config_cbo = parameters_at_max(results_cbo, 1)
-best_objective_cbo = results_cbo.loc[i_max, "objective"].iloc[0]
+best_config_cbo, best_objective_cbo = parameters_at_max(results_cbo)
 
 print("\n" + "=" * 60)
 print("CBO Best Results")
@@ -250,8 +249,7 @@ print(f"Distance from global minimum (0,0,0,0,0): {np.linalg.norm(best_x_cbo):.6
 # Analyze Random Search Results
 # ------------------------------
 
-i_max, best_config_random = parameters_at_max(results_random, 1)
-best_objective_random = results_random.loc[i_max, "objective"].iloc[0]
+best_config_random, best_objective_random = parameters_at_max(results_random)
 
 print("\n" + "=" * 60)
 print("Random Search Best Results")
