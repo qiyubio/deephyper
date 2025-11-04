@@ -2,7 +2,7 @@ r"""
 Benchmark: Ackley Function Optimization
 ========================================
 
-**Author(s)**: DeepHyper Team
+**Author(s)**: claude
 
 This example demonstrates a complete benchmark using DeepHyper to optimize the
 Ackley function, a classic multimodal benchmark function commonly used to test
